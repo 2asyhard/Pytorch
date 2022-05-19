@@ -1,8 +1,7 @@
 """
 policy gradient using pytorch
-gym, pygame needs to be installed
 """
-# 참고 자료: https://github.com/simoninithomas/Policy_gradients_CartPole/blob/master/Siraj's%20Challenge%20Policy%20Gradient%20Learning.ipynb
+
 import torch
 import torch.nn as nn
 import gym
@@ -17,7 +16,7 @@ ACTION_SIZE = 2
 GAMMA = 0.95
 EPS = np.finfo(np.float32).eps.item()
 LR = 5e-3
-RENDER = False
+RENDER = False # if True, pygame needs to be installed
 
 
 class policyNET(nn.Module):
